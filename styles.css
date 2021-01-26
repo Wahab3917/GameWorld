@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px;
+  background: #242529;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #fafafa;
+  font-family: sans-serif;
+}
+
+.games-container {
+  width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-1, .game-2, .game-3, 
+.game-4, .game-5 {
+  margin: 15px;
+  transition: 250ms ease-in-out;
+}
+
+.game-1:hover, .game-1:focus,
+.game-2:hover, .game-2:focus,
+.game-3:hover, .game-3:focus,
+.game-4:hover, .game-4:focus,
+.game-5:hover, .game-5:focus {
+  /* background: rgba(0, 0, 0, 0.3); */
+  transform: scale(1.1);
+}
+
