@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  border: 1px solid #101010;
+  
+  overflow: hidden;
+
+  background: url(img/road-1.png);
+  background-size: cover;
+}
+
+#car {
+  width: 100px;
+  height: 100px;
+
+  /* background-color: #101010; */
+
+  background: url(img/car-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  top: 150px;
+  position: relative;
+
+}
+
+.jump {
+  animation: jump 300ms linear;  
+}
+
+@keyframes jump {
+  0% {top: 150px;}
+  30% {top: 100px;}
+  70% {top: 100px;}
+  100% {top: 150px;}
+}
+
+#obstacle {
+  width: 30px;
+  height: 30px;
+
+  top: 70px;
+  left: 500px;
+  position: relative;
+
+  /* background-color: #101010; */
+
+  background: url(img/obstacle-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes block {
+  0% {left: 500px;}
+  100% {left: -20px;}
+}
+
+p, #play-btn {
+  font-size: 24px;
+  text-align: center;
+  position: absolute;
+  font-family: sans-serif;
+}
+
+p {
+  top: 30px; left: 30px;
+}
+
+#play-btn {
+  padding: 5px 20px;
+  top: 30px; right: 30px;
+}
+
+#play-btn:hover {
+  cursor: pointer;
+}
+
+

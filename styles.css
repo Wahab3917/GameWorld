@@ -31,7 +31,7 @@ body {
 }
 
 .game-1, .game-2, .game-3, 
-.game-4, .game-5 {
+.game-4, .game-5, .game-6 {
   margin: 15px;
   transition: 250ms ease-in-out;
 }
@@ -40,7 +40,8 @@ body {
 .game-2:hover, .game-2:focus,
 .game-3:hover, .game-3:focus,
 .game-4:hover, .game-4:focus,
-.game-5:hover, .game-5:focus {
+.game-5:hover, .game-5:focus,
+.game-6:hover, .game-6:focus {
   /* background: rgba(0, 0, 0, 0.3); */
   transform: scale(1.1);
 }
