@@ -1,2 +1,2 @@
 # GameWorld
-A gaming platform with 5 fun games.
+A gaming platform with 6 fun games.
